@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>היהודית: תגובות</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>היהודית: תגובות</h1>
+  <button id="refresh" class="icon-btn" type="button" aria-label="רענון" hidden>↻ רענון</button>
+</header>
+
+<main>
+  <section id="auth" class="panel">
+    <p class="lead">התחברו עם חשבון גוגל כדי לראות ולנהל את התגובות.</p>
+    <button id="signin" class="primary" type="button">התחברות עם Google</button>
+    <p class="hint">בפעם הראשונה גוגל עשויה להציג "Google hasn't verified this app". לוחצים Advanced ואז Continue.</p>
+  </section>
+
+  <div id="userbar" class="userbar" hidden>
+    <span>מחוברים</span>
+    <a href="#" id="signout">התנתקות</a>
+  </div>
+
+  <div id="banner" class="banner" role="status" hidden></div>
+
+  <section id="inbox" hidden>
+    <div id="chips" class="chips" role="tablist"></div>
+    <div class="toggle" role="group" aria-label="סינון">
+      <button type="button" id="t-pending" class="on">ממתינות</button>
+      <button type="button" id="t-all">הכול</button>
+    </div>
+    <div id="list" class="list"></div>
+    <p id="empty" class="empty" hidden>אין תגובות להצגה.</p>
+  </section>
+
+  <section id="addsec" class="panel" hidden>
+    <h2>➕ תגובה מטיקטוק או X</h2>
+    <form id="addform">
+      <label>רשת
+        <select id="a-net"><option>טיקטוק</option><option>X</option></select>
+      </label>
+      <label>שם הפוסט
+        <input id="a-post" type="text" required>
+      </label>
+      <label>שם המגיב
+        <input id="a-user" type="text" required>
+      </label>
+      <label>טקסט התגובה
+        <textarea id="a-text" rows="3" required></textarea>
+      </label>
+      <button type="submit" class="primary" id="a-submit">הוספה</button>
+      <p id="a-msg" class="ok" role="status" hidden></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <a id="sheetlink" href="https://docs.google.com/spreadsheets/d/13givpcblrthEprpyU_3kpeEYU863muzmCltBbJmBiV8/edit" target="_blank" rel="noopener">לפתוח את הגיליון</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

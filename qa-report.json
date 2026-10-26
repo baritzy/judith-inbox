@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-26",
+  "project": "judith-inbox",
+  "automated_coverage": "pass",
+  "automated_coverage_details": "node --check app.js OK; no em dashes; no innerHTML/data in repo (static files only). No unit test suite exists.",
+  "browser_test": "pass",
+  "browser_test_details": "Demo mode only (?demo=1) at 390px and 1440px via agent-browser: layout reviewed, publish button save flow and manual-row add flow exercised with simulated writes. Real Google sign-in and Sheets read/write NOT tested."
+}
